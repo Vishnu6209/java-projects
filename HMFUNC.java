@@ -17,7 +17,13 @@ public class HMFUNC {
 		System.out.println(hs);
 		System.out.println(hs.containsKey(5));//checking key is theire are not
 		System.out.println(hs.containsValue("pamuru"));//checking values or objects are their or not
-		
+		Set<Integer> keys = hs.keySet();
+		System.out.println("Keys: " + keys);
+		Collection<String> values=hs.values();
+		System.out.println("values: " + values);
+		for (Map.Entry<Integer, String> entry : hs.entrySet()) {
+			System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+		}
 	}
 
 }
